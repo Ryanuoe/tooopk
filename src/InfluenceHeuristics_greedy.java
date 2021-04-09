@@ -1,19 +1,21 @@
-import java.util.ArrayList;
-import util.*;
+import util.Neighbor;
+import util.Node;
 
-public class InfluenceHeuristics {
+import java.util.ArrayList;
+
+public class InfluenceHeuristics_greedy {
 
 	 ArrayList<Node> nodeList;
 	 int k;
 	 int[] seeds;
 
 	 //initialize
-	 public InfluenceHeuristics(int sizeOfSeedSet) {
+	 public InfluenceHeuristics_greedy(int sizeOfSeedSet) {
 		super();
 		//read hep
-		ReadHep readHepData = new ReadHep();
-		readHepData.run();
-		this.nodeList = readHepData.getNodeList();
+		//ReadHep readHepData = new ReadHep();
+		//readHepData.run();
+		//this.nodeList = readHepData.getNodeList();
 		
 		//read phy
 //		ReadPhy readPhyData = new ReadPhy();
@@ -21,9 +23,9 @@ public class InfluenceHeuristics {
 //		this.nodeList = readPhyData.getNodeList();
 		
 		//read dblp
-//		ReadDblp readDblpData = new ReadDblp();
-//		readDblpData.run();
-//		this.nodeList = readDblpData.getNodeList();
+		ReadDblp readDblpData = new ReadDblp();
+		readDblpData.run();
+		this.nodeList = readDblpData.getNodeList();
 		
 		//read Epinions
 //		ReadEpinions readEpinionsData = new ReadEpinions();
@@ -45,7 +47,7 @@ public class InfluenceHeuristics {
 	 public void run(){
 		 //MaxDegreeSelectSeed();
 		 //RandomSelectSeed();
-		 DegreeDiscountIC();
+		 //DegreeDiscountIC();
 		 OriginalGreedy();
 		 InfluenceSpread();
 	 }
@@ -65,7 +67,7 @@ public class InfluenceHeuristics {
 			 seeds[i] = tempID;
 			 nodeList.get(tempID).setSeed(true);
 			 nodeList.get(tempID).setActive(true);
-			 //System.out.println("Seed: " + i + " : " + tempID + " degree: " + nodeList.get(tempID).getNeighborList().size());
+			 System.out.println("Seed " + i + " : " + tempID + " degree: " + nodeList.get(tempID).getNeighborList().size());
 			 //output test
 			 //System.out.println("Seed : " + i + " " + seeds[i]);
 		 }
@@ -81,7 +83,7 @@ public class InfluenceHeuristics {
 			 seeds[i] = tempID;
 			 nodeList.get(tempID).setSeed(true);
 			 nodeList.get(tempID).setActive(true);
-			 //System.out.println("Seed: " + i + " : " + tempID + " degree: " + nodeList.get(tempID).getNeighborList().size());
+			 System.out.println("Seed: " + i + " : " + tempID + " degree: " + nodeList.get(tempID).getNeighborList().size());
 			 //System.out.println("seed: " +  i + " "+ tempID );
 		 }
 	 }
@@ -98,7 +100,7 @@ public class InfluenceHeuristics {
 			 seeds[i] = tempID;
 			 nodeList.get(tempID).setSeed(true);
 			 nodeList.get(tempID).setActive(true);
-			 //System.out.println("Seed: " + i + " : " + tempID + " degree: " + nodeList.get(tempID).getNeighborList().size() + " dd: " +  nodeList.get(tempID).getDegree());
+			 System.out.println("Seed: " + i + " : " + tempID + " Degree: " + nodeList.get(tempID).getNeighborList().size() + " RealDegree: " +  nodeList.get(tempID).getDegree());
 			 DegreeDiscountProcess(tempID);
 		 }
 	 }
@@ -120,7 +122,9 @@ public class InfluenceHeuristics {
 			 Node n = nodeList.get(e.getNodeId());
 			 if(!n.isSeed()){
 				 n.setActiveNeighbors(n.getActiveNeighbors()+1);
-				 n.setDegree((int)(n.getNeighborList().size() - 2 * n.getActiveNeighbors() -(n.getNeighborList().size() -  n.getActiveNeighbors())* n.getActiveNeighbors()*n.getNeighborList().get(0).getWeight()));
+				 n.setDegree((int)(n.getNeighborList().size()
+						 - 2 * n.getActiveNeighbors() -(n.getNeighborList().size()
+						 -  n.getActiveNeighbors())* n.getActiveNeighbors()*n.getNeighborList().get(0).getWeight()));
 			 }
 		 }
 	 }
@@ -174,12 +178,9 @@ public class InfluenceHeuristics {
 		 
 		 //Statistics
 		 int activeNum = 0;
-		 int inactiveNum = 0;
 		 for(Node n: nodeList){
 			 if(n.isTempActive()&&!n.isActive()){
 				 activeNum++;
-			 }else{
-				 inactiveNum++;
 			 }
 		 }
 		 return activeNum;
@@ -215,21 +216,17 @@ public class InfluenceHeuristics {
 		 
 		 //Statistics
 		 int activeNum = 0;
-		 int inactiveNum = 0;
+
 		 for(Node n: nodeList){
 			 if(n.isActive()){
 				 activeNum++;
-			 }else{
-				 inactiveNum++;
 			 }
 		 }
-		 
-		 double ratio = (double)activeNum/(activeNum + inactiveNum);
-		// System.out.println("Spread: " + activeNum);
+		 //System.out.println("Spread: " + activeNum);
 		 return activeNum;
 	 }
 	 
-	 
+	 //DFS递归蒙特卡洛模拟
 	 public void Spread(int nodeId){
 		 for(Neighbor neighbor: nodeList.get(nodeId).getNeighborList()){
 			 double random = Math.random();
@@ -247,12 +244,12 @@ public class InfluenceHeuristics {
      {
 		 System.out.println("start running");
 		 int spread = 0;
-		 int reps = 3;//init reps 10
+		 int reps = 1;//init reps 10
 		 long  startTime = System.currentTimeMillis();
 		 for(int i=0; i<reps; i++){
 		 	System.out.println("process on "+i+" step");
 		 	System.out.println("--------------------------------------");
-		 	InfluenceHeuristics g = new InfluenceHeuristics(30);// init sizeOfSeedSet 30
+		 	InfluenceHeuristics_greedy g = new InfluenceHeuristics_greedy(10);// init sizeOfSeedSet 30
 		 	g.run();
 			spread += g.InfluenceSpread();
 		 } 

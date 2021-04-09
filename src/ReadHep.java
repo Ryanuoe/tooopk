@@ -6,7 +6,7 @@ public class ReadHep {
 
     int numOfNodes = 15233;
  
-    //Adjacent lists
+    //Adjacent lists邻接表
     ArrayList<Node> nodeList = new ArrayList<Node>();
 
 	 
@@ -19,12 +19,6 @@ public class ReadHep {
 	        BufferedReader br = new BufferedReader(new InputStreamReader(in));  
 	        String strLine;
 
-	        
-	        //int average = 0;
-	        //int num = 0;
-			
-//			int previous0 = 0;
-//        	int previous1 = 0;
         	
 	        while ((strLine = br.readLine()) != null)  
 		    {
@@ -33,10 +27,9 @@ public class ReadHep {
 	        	int[] values = new int[str.length];
 	        	for(int i=0;i<str.length;i++){
 	        		values[i] = Integer.valueOf(str[i]);
+					//System.out.println(values[i]);
 	        	}
-//	        	System.out.println("length: " +values.length);
-//	        	System.out.println(values[0] +  " " + values[1]);
-	        	
+
 	        	
 	        	//first line show how many nodes there are
 	            if(values[0]==15233&&values[1]==58891){
@@ -48,17 +41,7 @@ public class ReadHep {
 	        		}
 	        		continue;
 	        	}
-	        		
-//	        	//delete the repeating pair according to the directory
-//	        	if(values[0]==previous0&&values[1]==previous1){
-//	        		previous0 = values[0];
-//	        		previous1 = values[1];
-//	        		continue;
-//	        	}
-//	        	
-//	        	//update the previous
-//	        	previous0 = values[0];
-//        		previous1 = values[1];
+
 	        	
 	        	
 	        	if(values[0]>=0&&values[0]<=numOfNodes&&values[1]>=0&&values[1]<=numOfNodes){
@@ -93,21 +76,12 @@ public class ReadHep {
 	
 	//return a random value from 0.1, 0.01, 0.001.
 	public double trivalencyModel(){
-		//double p = 1 + (int)(Math.random()*3);
-		//System.out.println(1/(Math.pow(10, p)));
-		
-		//double p = Math.random();
-		
-		//TRIVALENCY model
-		//return 1/(Math.pow(10, p));
 		
 		//TRIVALENCY model 2
 		int p = (int)(Math.random()*3);
 		double[] choice = {0.2,0.04,0.008};
 		return choice[p];
-		
-		//uniform IC model
-		//return (double)1/100;
+
 	}
 	
 	

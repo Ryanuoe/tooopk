@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9702ac2d-41d3-4116-ad2c-453f8bd4033f" name="Default" comment="a" />
+    <list default="true" id="9702ac2d-41d3-4116-ad2c-453f8bd4033f" name="Default" comment="a">
+      <change afterPath="$PROJECT_DIR$/src/InfluenceHeuristics_fin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InfluenceHeuristics_greedy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InfluenceMaximization/InfluenceHeuristics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InfluenceMaximization/ReadHep.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfluenceMaximization/ReadHep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InfluenceHeuristics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfluenceHeuristics_init.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadHep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadHep.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +64,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -67,7 +75,7 @@
       <recent name="D:\InfluenceMaximization\data" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.InfluenceHeuristics_init">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -85,8 +93,46 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <configuration name="InfluenceHeuristics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="InfluenceHeuristics" />
+    <configuration name="FindDisjointPaths" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.FindDisjointPaths" />
+      <module name="InfluenceMaximization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InfluenceHeuristics2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InfluenceHeuristics2" />
+      <module name="InfluenceMaximization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InfluenceHeuristics_fin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InfluenceHeuristics_fin" />
+      <module name="InfluenceMaximization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InfluenceHeuristics_greedy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InfluenceHeuristics_greedy" />
+      <module name="InfluenceMaximization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InfluenceHeuristics_init" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InfluenceHeuristics_init" />
       <module name="InfluenceMaximization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
@@ -126,9 +172,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.FindDisjointPaths" />
+      <item itemvalue="Application.InfluenceHeuristics2" />
+      <item itemvalue="Application.InfluenceHeuristics_init" />
+      <item itemvalue="Application.InfluenceHeuristics_fin" />
+      <item itemvalue="Application.InfluenceHeuristics_greedy" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InfluenceHeuristics" />
+        <item itemvalue="Application.InfluenceHeuristics_init" />
+        <item itemvalue="Application.InfluenceHeuristics_fin" />
+        <item itemvalue="Application.InfluenceHeuristics_greedy" />
+        <item itemvalue="Application.InfluenceHeuristics2" />
+        <item itemvalue="Application.FindDisjointPaths" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +197,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1416518557356</updated>
-      <workItem from="1617860326576" duration="9921000" />
+      <workItem from="1617860326576" duration="33749000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1617947993610</created>
@@ -149,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617947993610</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="a">
+      <created>1617948172144</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617948172144</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,34 +247,62 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="371" y="147" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1617947154981" />
+    <state x="396" y="102" key="#xdebugger.evaluate" timestamp="1617973652888">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="396" y="102" key="#xdebugger.evaluate/0.0.1280.800@0.0.1280.800" timestamp="1617973652888" />
     <state x="421" y="141" key="FileChooserDialogImpl" timestamp="1617947878677">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="421" y="141" key="FileChooserDialogImpl/0.0.1280.800@0.0.1280.800" timestamp="1617947878677" />
-    <state width="1238" height="156" key="GridCell.Tab.0.bottom" timestamp="1617947995507">
+    <state x="476" y="298" key="Github.ShareDialog" timestamp="1617948215829">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="156" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1617947995507" />
-    <state width="1238" height="156" key="GridCell.Tab.0.center" timestamp="1617947995507">
+    <state x="476" y="298" key="Github.ShareDialog/0.0.1280.800@0.0.1280.800" timestamp="1617948215829" />
+    <state width="1238" height="392" key="GridCell.Tab.0.bottom" timestamp="1617980385919">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="156" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1617947995507" />
-    <state width="1238" height="156" key="GridCell.Tab.0.left" timestamp="1617947995507">
+    <state width="1238" height="392" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1617980385919" />
+    <state width="1238" height="392" key="GridCell.Tab.0.center" timestamp="1617980385919">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="156" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1617947995507" />
-    <state width="1238" height="156" key="GridCell.Tab.0.right" timestamp="1617947995507">
+    <state width="1238" height="392" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1617980385919" />
+    <state width="1238" height="392" key="GridCell.Tab.0.left" timestamp="1617980385919">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="156" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1617947995507" />
-    <state x="142" y="45" key="SettingsEditor" timestamp="1617947850129">
+    <state width="1238" height="392" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1617980385919" />
+    <state width="1238" height="392" key="GridCell.Tab.0.right" timestamp="1617980385919">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="142" y="45" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1617947850129" />
+    <state width="1238" height="392" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1617980385919" />
+    <state width="1238" height="203" key="GridCell.Tab.1.bottom" timestamp="1617975161864">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="203" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1617975161864" />
+    <state width="1238" height="203" key="GridCell.Tab.1.center" timestamp="1617975161864">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="203" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1617975161864" />
+    <state width="1238" height="203" key="GridCell.Tab.1.left" timestamp="1617975161864">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="203" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1617975161864" />
+    <state width="1238" height="203" key="GridCell.Tab.1.right" timestamp="1617975161864">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="203" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1617975161864" />
+    <state x="142" y="45" key="SettingsEditor" timestamp="1617948413361">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="142" y="45" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1617948413361" />
     <state x="233" y="133" key="Vcs.Push.Dialog.v2" timestamp="1617947739899">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="233" y="133" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1617947739899" />
+    <state x="303" y="122" width="672" height="678" key="search.everywhere.popup" timestamp="1617971319791">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="303" y="122" width="672" height="678" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1617971319791" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
