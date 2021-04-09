@@ -11,9 +11,9 @@ public class InfluenceHeuristics {
 	 public InfluenceHeuristics(int sizeOfSeedSet) {
 		super();
 		//read hep
-//		ReadHep readHepData = new ReadHep();
-//		readHepData.run();
-//		this.nodeList = readHepData.getNodeList();
+		ReadHep readHepData = new ReadHep();
+		readHepData.run();
+		this.nodeList = readHepData.getNodeList();
 		
 		//read phy
 //		ReadPhy readPhyData = new ReadPhy();
@@ -31,9 +31,9 @@ public class InfluenceHeuristics {
 //		this.nodeList = readEpinionsData.getNodeList();
 		
 		//read Amazon
-		ReadAmazon readAmazonData = new ReadAmazon();
-		readAmazonData.run();
-		this.nodeList = readAmazonData.getNodeList();
+		//ReadAmazon readAmazonData = new ReadAmazon();
+		//readAmazonData.run();
+		//this.nodeList = readAmazonData.getNodeList();
 		
 		k = sizeOfSeedSet;
 		seeds = new int[k];
@@ -44,7 +44,7 @@ public class InfluenceHeuristics {
 	 
 	 public void run(){
 		 //MaxDegreeSelectSeed();
-//		 RandomSelectSeed();
+		 //RandomSelectSeed();
 		 DegreeDiscountIC();
 		 OriginalGreedy();
 		 InfluenceSpread();
@@ -245,15 +245,21 @@ public class InfluenceHeuristics {
     //IC Model
 	 public static void main(String args[])
      {
-
+		 System.out.println("start running");
 		 int spread = 0;
-		 int reps = 10;
+		 int reps = 3;//init reps 10
+		 long  startTime = System.currentTimeMillis();
 		 for(int i=0; i<reps; i++){
-		 	InfluenceHeuristics g = new InfluenceHeuristics(30);
+		 	System.out.println("process on "+i+" step");
+		 	System.out.println("--------------------------------------");
+		 	InfluenceHeuristics g = new InfluenceHeuristics(30);// init sizeOfSeedSet 30
 		 	g.run();
 			spread += g.InfluenceSpread();
 		 } 
 		 spread = spread/reps;
+		 long endTime = System.currentTimeMillis();
+		 System.out.println("--------------------------------------");
 		 System.out.println("Influence Spread: " + spread);
+		 System.out.println("程序运行时间：" + (endTime - startTime) + "ms");
 	}
 }

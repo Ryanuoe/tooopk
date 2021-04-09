@@ -39,7 +39,7 @@ public class ReadHep {
 	        	
 	        	
 	        	//first line show how many nodes there are
-	        	if(values[0]==15233&&values[1]==58891){
+	            if(values[0]==15233&&values[1]==58891){
 	        		//create the list
 	        		for(int i=0; i<values[0]; i++){
 	        			Node node = new Node();
