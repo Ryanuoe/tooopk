@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9702ac2d-41d3-4116-ad2c-453f8bd4033f" name="Default" comment="test" />
+    <list default="true" id="9702ac2d-41d3-4116-ad2c-453f8bd4033f" name="Default" comment="?">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,8 +57,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -189,7 +192,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1416518557356</updated>
-      <workItem from="1617860326576" duration="34316000" />
+      <workItem from="1617860326576" duration="34612000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1617947993610</created>
@@ -226,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617980915406</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="?">
+      <created>1617981163881</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617981163881</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +264,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="?" />
+    <option name="LAST_COMMIT_MESSAGE" value="?" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="147" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617947154981">
@@ -265,10 +276,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="396" y="102" key="#xdebugger.evaluate/0.0.1280.800@0.0.1280.800" timestamp="1617973652888" />
-    <state x="421" y="141" key="FileChooserDialogImpl" timestamp="1617947878677">
+    <state x="421" y="141" key="FileChooserDialogImpl" timestamp="1617981275588">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="421" y="141" key="FileChooserDialogImpl/0.0.1280.800@0.0.1280.800" timestamp="1617947878677" />
+    <state x="421" y="141" key="FileChooserDialogImpl/0.0.1280.800@0.0.1280.800" timestamp="1617981275588" />
     <state x="476" y="298" key="Github.ShareDialog" timestamp="1617980715104">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -305,10 +316,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="203" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1617975161864" />
-    <state x="142" y="45" key="SettingsEditor" timestamp="1617980673591">
+    <state x="142" y="45" key="SettingsEditor" timestamp="1617981295014">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="142" y="45" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1617980673591" />
+    <state x="142" y="45" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1617981295014" />
     <state x="233" y="133" key="Vcs.Push.Dialog.v2" timestamp="1617980939656">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
