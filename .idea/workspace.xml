@@ -10,7 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9702ac2d-41d3-4116-ad2c-453f8bd4033f" name="Default" comment="c">
+    <list default="true" id="9702ac2d-41d3-4116-ad2c-453f8bd4033f" name="Default" comment="test1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/InfluenceMaximization/util/FindDisjointPaths.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/FindDisjointPaths.java" beforeDir="false" />
@@ -59,7 +59,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -189,7 +189,8 @@
       <workItem from="1617860326576" duration="36023000" />
       <workItem from="1618036347578" duration="3008000" />
       <workItem from="1618060298845" duration="107000" />
-      <workItem from="1618128757007" duration="2811000" />
+      <workItem from="1618128757007" duration="3348000" />
+      <workItem from="1618134221019" duration="900000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1617947993610</created>
@@ -254,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618131849686</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test1">
+      <created>1618133338807</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618133338807</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +293,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="?" />
     <MESSAGE value="c" />
-    <option name="LAST_COMMIT_MESSAGE" value="c" />
+    <MESSAGE value="test1" />
+    <option name="LAST_COMMIT_MESSAGE" value="test1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="147" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617947154981">
@@ -300,30 +309,30 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="501" y="147" key="EnvironmentVariablesDialog/0.0.1280.800@0.0.1280.800" timestamp="1618131704812" />
-    <state x="421" y="141" key="FileChooserDialogImpl" timestamp="1617982495040">
+    <state x="421" y="141" key="FileChooserDialogImpl" timestamp="1618133232286">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="421" y="141" key="FileChooserDialogImpl/0.0.1280.800@0.0.1280.800" timestamp="1617982495040" />
+    <state x="421" y="141" key="FileChooserDialogImpl/0.0.1280.800@0.0.1280.800" timestamp="1618133232286" />
     <state x="476" y="298" key="Github.ShareDialog" timestamp="1617980715104">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="476" y="298" key="Github.ShareDialog/0.0.1280.800@0.0.1280.800" timestamp="1617980715104" />
-    <state width="1238" height="347" key="GridCell.Tab.0.bottom" timestamp="1618131515505">
+    <state width="1238" height="347" key="GridCell.Tab.0.bottom" timestamp="1618133655659">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="347" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1618131515505" />
-    <state width="1238" height="347" key="GridCell.Tab.0.center" timestamp="1618131515505">
+    <state width="1238" height="347" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1618133655659" />
+    <state width="1238" height="347" key="GridCell.Tab.0.center" timestamp="1618133655659">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="347" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1618131515505" />
-    <state width="1238" height="347" key="GridCell.Tab.0.left" timestamp="1618131515505">
+    <state width="1238" height="347" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1618133655659" />
+    <state width="1238" height="347" key="GridCell.Tab.0.left" timestamp="1618133655659">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="347" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1618131515505" />
-    <state width="1238" height="347" key="GridCell.Tab.0.right" timestamp="1618131515505">
+    <state width="1238" height="347" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1618133655659" />
+    <state width="1238" height="347" key="GridCell.Tab.0.right" timestamp="1618133655659">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="347" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1618131515505" />
+    <state width="1238" height="347" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1618133655659" />
     <state width="1238" height="203" key="GridCell.Tab.1.bottom" timestamp="1618058062931">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -340,14 +349,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="203" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1618058062931" />
-    <state x="142" y="45" key="SettingsEditor" timestamp="1618131782375">
+    <state x="142" y="45" key="SettingsEditor" timestamp="1618134642649">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="142" y="45" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1618131782375" />
-    <state x="233" y="133" key="Vcs.Push.Dialog.v2" timestamp="1618132701853">
+    <state x="142" y="45" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1618134642649" />
+    <state x="233" y="133" key="Vcs.Push.Dialog.v2" timestamp="1618135090604">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="233" y="133" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1618132701853" />
+    <state x="233" y="133" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1618135090604" />
     <state x="507" y="0" width="594" height="800" key="find.popup" timestamp="1618132175423">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
